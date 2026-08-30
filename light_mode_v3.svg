@@ -1,65 +1,96 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="530px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" width="1120px" height="640px" viewBox="0 0 1120 640">
 <style>
 @font-face {
-src: local('Consolas'), local('Consolas Bold');
-font-family: 'ConsolasFallback';
-font-display: swap;
--webkit-size-adjust: 109%;
-size-adjust: 109%;
+  src: local('Consolas'), local('Consolas Bold'), local('Fira Code'), local('Courier New'), local('monospace');
+  font-family: 'ConsolasFallback';
+  font-display: swap;
 }
-.key {fill: #bc4c00; font-weight: bold;}
-.value {fill: #0550ae;}
-.addColor {fill: #1a7f37; font-weight: bold;}
-.delColor {fill: #cf222e;}
-.cc {fill: #8c959f;}
-.ascii {fill: #1f2328;}
-text, tspan {white-space: pre;}
+.ascii {
+  font-family: 'ConsolasFallback', Consolas, 'Fira Code', 'Courier New', monospace;
+  fill: #1f2328;
+  font-size: 10.5px;
+  letter-spacing: 0px;
+}
+.specs {
+  font-family: 'ConsolasFallback', Consolas, 'Fira Code', 'Courier New', monospace;
+  font-size: 14px;
+}
+.key { fill: #bc4c00; font-weight: bold; }
+.val { fill: #0550ae; }
+.addColor { fill: #1a7f37; font-weight: bold; }
+.delColor { fill: #cf222e; }
+.cc { fill: #8c959f; }
+text, tspan { white-space: pre; }
 </style>
-<rect width="985px" height="530px" fill="#ffffff" rx="15"/>
-<text x="15" y="30" fill="#24292f">
-<tspan x="15" y="30" fill="#1f2328" class="ascii">            |jl|lkmWWN##NN            </tspan>
-<tspan x="15" y="50" fill="#1f2328" class="ascii">            +&#x27; !jkppWgNNWN            </tspan>
-<tspan x="390" y="50" class="cc">. </tspan><tspan class="key">OS</tspan><tspan class="cc">: ........................ </tspan><tspan class="value">Linux (Debian), Windows 11</tspan>
-<tspan x="15" y="70" fill="#1f2328" class="ascii">            !|l*lph*kmpmmW            </tspan>
-<tspan x="390" y="70" class="cc">. </tspan><tspan class="key">Host</tspan><tspan class="cc">: ...................... </tspan><tspan class="value">Palestine Technical University - Kadoorie</tspan>
-<tspan x="15" y="90" fill="#1f2328" class="ascii">          &#x27;..*j!|W##%%#Njjmg          </tspan>
-<tspan x="390" y="90" class="cc">. </tspan><tspan class="key">Kernel</tspan><tspan class="cc">: .... </tspan><tspan class="addColor">Computer Systems Engineering (2022-2027)</tspan>
-<tspan x="15" y="110" fill="#1f2328" class="ascii">          *&#x27;!hmM@@@@@@@@@Mpm          </tspan>
-<tspan x="390" y="110" class="cc">. </tspan><tspan class="key">Role</tspan><tspan class="cc">: ...... </tspan><tspan class="value">Full-Stack Developer &amp; Security Researcher</tspan>
-<tspan x="15" y="130" fill="#1f2328" class="ascii">          j|*M@gjlll||jkg@@g          </tspan>
-<tspan x="390" y="130" class="cc">. </tspan><tspan class="key">IDE</tspan><tspan class="cc">: ........................ </tspan><tspan class="value">VS Code, Visual Studio 2022</tspan>
-<tspan x="15" y="150" fill="#1f2328" class="ascii">         *ljp@M!.        m@MN         </tspan>
-<tspan x="15" y="170" fill="#1f2328" class="ascii">         +lhWWlll*+..&#x27;&#x27;&#x27;.|@#N         </tspan>
-<tspan x="390" y="170" class="cc">. </tspan><tspan class="key">Languages</tspan><tspan class="key">.</tspan><tspan class="key">Backend</tspan><tspan class="cc">: ... </tspan><tspan class="value">C# (ASP.NET), PHP (Laravel), Python, SQL</tspan>
-<tspan x="15" y="190" fill="#1f2328" class="ascii">         +|jk+kWWWMkhNNmplWNN         </tspan>
-<tspan x="390" y="190" class="cc">. </tspan><tspan class="key">Languages</tspan><tspan class="key">.</tspan><tspan class="key">Frontend</tspan><tspan class="cc">: .. </tspan><tspan class="value">React, Vue.js, JavaScript, HTML5, SCSS</tspan>
-<tspan x="15" y="210" fill="#1f2328" class="ascii">         |jjk!+***j&#x27;+lj|l|lhM         </tspan>
-<tspan x="390" y="210" class="cc">. </tspan><tspan class="key">Languages</tspan><tspan class="key">.</tspan><tspan class="key">Database</tspan><tspan class="cc">: .. </tspan><tspan class="value">MySQL, Microsoft SQL Server</tspan>
-<tspan x="15" y="230" fill="#1f2328" class="ascii">         hhhkl!++lpll+...!lm#         </tspan>
-<tspan x="15" y="250" fill="#1f2328" class="ascii">         kpmmgpjNWggmpk+!pWNM         </tspan>
-<tspan x="390" y="250" class="cc">. </tspan><tspan class="key">Security</tspan><tspan class="key">.</tspan><tspan class="key">Tools</tspan><tspan class="cc">: ..... </tspan><tspan class="value">Burp Suite Pro, OWASP Top 10, DevTools</tspan>
-<tspan x="15" y="270" fill="#1f2328" class="ascii">          gWNWM#NhpklkNhg###          </tspan>
-<tspan x="390" y="270" class="cc">. </tspan><tspan class="key">Security</tspan><tspan class="key">.</tspan><tspan class="key">Practice</tspan><tspan class="cc">: .. </tspan><tspan class="value">Web Pentesting, Vulnerability Assessment</tspan>
-<tspan x="15" y="290" fill="#1f2328" class="ascii">          gNWg@@@@#NN#@@%MN#          </tspan>
-<tspan x="15" y="310" fill="#1f2328" class="ascii">          mgk&#x27;g@@@@@@@@M|ggM          </tspan>
-<tspan x="390" y="310" class="cc">. </tspan><tspan class="key">Certifications</tspan><tspan class="cc">: ........... </tspan><tspan class="addColor">OCI 2025 Networking, AI/TF, Web Ethical Hacking</tspan>
-<tspan x="15" y="330" fill="#1f2328" class="ascii">       +hWggg  +kWNMNm|  NNN%#W       </tspan>
-<tspan x="390" y="330" class="cc">. </tspan><tspan class="key">Email</tspan><tspan class="cc">: ...................... </tspan><tspan class="value">ahmadherzalla31@gmail.com</tspan>
-<tspan x="15" y="350" fill="#1f2328" class="ascii">       %@@#@M   .lkk!   |MMM#%#       </tspan>
-<tspan x="390" y="350" class="cc">. </tspan><tspan class="key">LinkedIn</tspan><tspan class="cc">: .................. </tspan><tspan class="value">ahmadherzalla12</tspan>
-<tspan x="15" y="370" fill="#1f2328" class="ascii">       %%%%@M.  h%#Mg!  kNWNM##       </tspan>
-<tspan x="390" y="370" class="cc">. </tspan><tspan class="key">Portfolio</tspan><tspan class="cc">: ................. </tspan><tspan class="value">ahmed-herzalla0.github.io/Portfolio-scss</tspan>
-<tspan x="15" y="390" fill="#1f2328" class="ascii">     #%%#%%@#&#x27;   *%g    mWNMMNMMM     </tspan>
-<tspan x="390" y="390" class="cc">. </tspan><tspan class="key">GitHub</tspan><tspan class="cc">: .................... </tspan><tspan class="value">Ahmed-Herzalla0</tspan>
-<tspan x="15" y="410" fill="#1f2328" class="ascii">   ####%##%@%+  .gMN&#x27;  &#x27;WWNNMMMNNNW   </tspan>
-<tspan x="15" y="430" fill="#1f2328" class="ascii"> %#####%%##%@j  l%WMl  lNWNNNNNWWWNN# </tspan>
-<tspan x="15" y="450" fill="#1f2328" class="ascii">%@%%%###%##%@g  mMNN|  pNWNNNNWWWNN#%#</tspan>
-<tspan x="15" y="470" fill="#1f2328" class="ascii">@@@%%#######%#! WNNMl !WWWNNNWWWNM#@%%</tspan>
-<tspan x="390" y="470" class="cc">. </tspan><tspan class="key">PortSwigger Labs</tspan><tspan class="cc">: ........ </tspan><tspan class="addColor">50+ Solved</tspan><tspan class="cc"> (SQLi, XSS, CSRF, IDOR)</tspan>
-<tspan x="15" y="490" fill="#1f2328" class="ascii">@@@@%%###M###@h!MNNM| kNWWNNNNNM%%@@@%</tspan>
-<tspan x="390" y="490" class="cc">. </tspan><tspan class="key">HackerOne Vulns</tspan><tspan class="cc">: ......... </tspan><tspan class="addColor">15+ Reported</tspan><tspan class="cc"> (High / Medium)</tspan>
-<tspan x="15" y="510" fill="#1f2328" class="ascii">%@@@@@%##MM##@WjMNNM*.NMNMMNMMM%@@@@%#</tspan>
-<tspan x="390" y="510" class="cc">. </tspan><tspan class="key">Status</tspan><tspan class="cc">: ................... </tspan><tspan class="addColor">Open for Engineering &amp; Security Roles</tspan>
+<rect width="1120" height="640" fill="#ffffff" rx="14" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="18" y="24" fill="#1f2328" class="ascii">
+<tspan x="18" y="24.0" fill="#1f2328">=========+++++*****+++=====+++++==----=+++++=----------------:::-------::-------</tspan>
+<tspan x="18" y="37.3" fill="#1f2328">=-====++++++*******+++====+++++++=-----=---::-----------------:::::-------------</tspan>
+<tspan x="18" y="50.6" fill="#1f2328">=====+++++++********++====+++*+--==::.::::...........:==++++=----:------------::</tspan>
+<tspan x="18" y="63.9" fill="#1f2328">====++++++++********+++===+***+++-.. ..................::+++===--------------:::</tspan>
+<tspan x="18" y="77.2" fill="#1f2328">=====+++++++*********+++=-===-:..   .......................:======---:::::::::::</tspan>
+<tspan x="18" y="90.5" fill="#1f2328">===========+++****++++--.=*-.            ............    .. .:===---::::::::::--</tspan>
+<tspan x="18" y="103.8" fill="#1f2328">==------====+++++++++:-..-                      ......         :-----:::::::::--</tspan>
+<tspan x="18" y="117.1" fill="#1f2328">---------=====++++===-...    .:-::::::::::::...::...            :-------::::::::</tspan>
+<tspan x="18" y="130.4" fill="#1f2328">-------==========+++-..    -==++++*++++++****#****++===--:.     .:-------:::::::</tspan>
+<tspan x="18" y="143.7" fill="#1f2328">==============++====-:.  .-++++++******###############****=-.   ..:-----::::::::</tspan>
+<tspan x="18" y="157.0" fill="#1f2328">++++++++==========+=-....:-+++++*********##############****+:... ..::::::::::--:</tspan>
+<tspan x="18" y="170.3" fill="#1f2328">++****++++++======-:.....:-++++***********#***#######*******-.  ...::::::::::---</tspan>
+<tspan x="18" y="183.6" fill="#1f2328">*******+++++====---:....:-=++++*****##################*****+=:....::::::::::::-:</tspan>
+<tspan x="18" y="196.9" fill="#1f2328">+*****+++++=====---:::.:-=++++******##################******=-:...::::::::::::::</tspan>
+<tspan x="18" y="210.2" fill="#1f2328">++++++++++=======--:::=+++++++==+++******###**#########*****=-::..::::::::::::::</tspan>
+<tspan x="18" y="223.5" fill="#1f2328">====+++++++++====--::=*+++=:.:::.... ..:=+**++=-------==*****+=:..::::::::::::::</tspan>
+<tspan x="18" y="236.8" fill="#1f2328">======+++++++==+*+-:=**+.  -========--::-==++-:..::::--:::=***+:..::::::::::::::</tspan>
+<tspan x="18" y="250.1" fill="#1f2328">======++++++====:==:-*++=:--:::-...-::-::+**:-=::::--=-++-.  -=:.:::::::::::::::</tspan>
+<tspan x="18" y="263.4" fill="#1f2328">======+++++====+=+=-+*+++==+====------=-:**+.+=---:.:=:--=:-===.=**=::::::::::::</tspan>
+<tspan x="18" y="276.7" fill="#1f2328">===============+===:+**+**-****+++++++=.+###-=*++=--===++*:++*+:+=--::::::::::.:</tspan>
+<tspan x="18" y="290.0" fill="#1f2328">+==============++=-:+******=***###**+--**###*-+**##******=+***+-*+=-::::::::::::</tspan>
+<tspan x="18" y="303.3" fill="#1f2328">++================-:=**+++++++====---++*####**=-+#####*+=*****+:+*+:::::::::::::</tspan>
+<tspan x="18" y="316.6" fill="#1f2328">+++===========---+=:-+++++++++***++===:-++++=+*+=++****#******=-**-:::::::::::::</tspan>
+<tspan x="18" y="329.9" fill="#1f2328">++===========----++:-===++++++++==+==-.::-:::-+#*++********+++:=*=::::::::::::::</tspan>
+<tspan x="18" y="343.2" fill="#1f2328">++==========-----==:----===++=-::.:::::---::::=+**+++******+=-.=-:::::::::::::::</tspan>
+<tspan x="18" y="356.5" fill="#1f2328">=========----------:--:-:-===-....::::::--------::--=+++++++=::+::::::::::::::::</tspan>
+<tspan x="18" y="369.8" fill="#1f2328">========-----------:----:::-=-::======++++*+*+-....:=+=+=-==-:.:::::::::::::::::</tspan>
+<tspan x="18" y="383.1" fill="#1f2328">++++====-------:::::-----::--::-++=-::..::----==+-:-+==-----::::::::::::::::::::</tspan>
+<tspan x="18" y="396.4" fill="#1f2328">+++++====-----::::::-:-::..::..:-====--===-=++++=-::===----:::::::::::::::::::::</tspan>
+<tspan x="18" y="409.7" fill="#1f2328">*+++++====-----:::::--::..... ...:::--===+++++=-:.::--::::::::::::::::..:::::::-</tspan>
+<tspan x="18" y="423.0" fill="#1f2328">*+++++++==-----:::::-=.....    ......::::-::::::.......:::..:::::::::...:::::---</tspan>
+<tspan x="18" y="436.3" fill="#1f2328">*+++++====-----:::::++:..             ..........    ......::::::::::::...:::--==</tspan>
+<tspan x="18" y="449.6" fill="#1f2328">**++++====------::--%==:.                           .  ..-=::---:::::....:::--==</tspan>
+<tspan x="18" y="462.9" fill="#1f2328">*++++++===-------=:+%#==-:.          ....         .....:-##::----:::::...:::--==</tspan>
+<tspan x="18" y="476.2" fill="#1f2328">***++++===----:-=-.#%###=--::........::::.............=#%%%-:-----::::...:::---=</tspan>
+<tspan x="18" y="489.5" fill="#1f2328">*****+++=====--=-..####%##+-----::......:...........+%%%%%%-::::--::::....:::---</tspan>
+<tspan x="18" y="502.8" fill="#1f2328">*****+=:..:---=-:..*##%%%%%##+-----:::::::::::::-+#%%%%%%%#:::::::::--::..::::--</tspan>
+<tspan x="18" y="516.1" fill="#1f2328">*+-:.....::::---:..=##%%%%%%%###=-------------+#%%%%%%%%%%=::::::::::..:::::::--</tspan>
+<tspan x="18" y="529.4" fill="#1f2328">::.....::..:::::...-*##%%%%%%%%%###========+%%%%%%%%%%%%%#::::::::::::....::::--</tspan>
+<tspan x="18" y="542.7" fill="#1f2328">::::..:::.::::....:-*###%%%%%%%%%%%*+*#***%%%%%%%%%%%%%%%=::-:::::::::::...:::::</tspan>
+<tspan x="18" y="556.0" fill="#1f2328">:::...::::::......::*##%%%%%%%%%=::.....::::=%%%%%%%%%%%#=:--:::::::::::::::::::</tspan>
+<tspan x="18" y="569.3" fill="#1f2328">::::.....:.:.....:::+##%%%%%%%+.....::::::::..-%%%%%%%%%*-:--::::::::::..:::::::</tspan>
+<tspan x="18" y="582.6" fill="#1f2328">::::::...::::....:::**%%%%%%*===-....:::-:...---+%%%%%%%+::---::::::::::::::::::</tspan>
+<tspan x="18" y="595.9" fill="#1f2328">:::::::::.:::....:::*##%%%#*####*+-...:-::.+###**+*%%%%*+::-----::::::::::::::::</tspan>
+<tspan x="18" y="609.2" fill="#1f2328">:.::::::::::......::+%####%%%%%####+...:.:*%%%%%%%###%##=:---:::::::::::::::::::</tspan>
+</text>
+<text x="560" y="45" fill="#24292f" class="specs">
+<tspan x="560" y="45.0" fill="#1a7f37" class="addColor">ahmad@PTUK:~$ neofetch --engineer --security</tspan>
+<tspan x="560" y="74.5"><tspan fill="#bc4c00" class="key">OS</tspan><tspan fill="#8c959f" class="cc">: ........................ </tspan><tspan fill="#0550ae" class="val">Linux (Debian), Windows 11</tspan></tspan>
+<tspan x="560" y="104.0"><tspan fill="#bc4c00" class="key">Host</tspan><tspan fill="#8c959f" class="cc">: ...................... </tspan><tspan fill="#0550ae" class="val">Palestine Technical University - Kadoorie</tspan></tspan>
+<tspan x="560" y="133.5"><tspan fill="#bc4c00" class="key">Kernel</tspan><tspan fill="#8c959f" class="cc">: .... </tspan><tspan fill="#1a7f37" class="addColor">Computer Systems Engineering (2022-2027)</tspan></tspan>
+<tspan x="560" y="163.0"><tspan fill="#bc4c00" class="key">Role</tspan><tspan fill="#8c959f" class="cc">: ...... </tspan><tspan fill="#0550ae" class="val">Full-Stack Developer &amp; Security Researcher</tspan></tspan>
+<tspan x="560" y="192.5"><tspan fill="#bc4c00" class="key">Focus</tspan><tspan fill="#8c959f" class="cc">: ..... </tspan><tspan fill="#0550ae" class="val">ASP.NET Core • Laravel • React • Vue.js</tspan></tspan>
+<tspan x="560" y="222.0"><tspan fill="#bc4c00" class="key">IDE</tspan><tspan fill="#8c959f" class="cc">: ........................ </tspan><tspan fill="#0550ae" class="val">VS Code, Visual Studio 2022</tspan></tspan>
+<tspan x="560" y="251.5"><tspan fill="#bc4c00" class="key">Backend</tspan><tspan fill="#8c959f" class="cc">: ... </tspan><tspan fill="#0550ae" class="val">C# (ASP.NET), PHP (Laravel), Python, SQL</tspan></tspan>
+<tspan x="560" y="281.0"><tspan fill="#bc4c00" class="key">Frontend</tspan><tspan fill="#8c959f" class="cc">: .. </tspan><tspan fill="#0550ae" class="val">React, Vue.js, JavaScript, HTML5, SCSS</tspan></tspan>
+<tspan x="560" y="310.5"><tspan fill="#bc4c00" class="key">Database</tspan><tspan fill="#8c959f" class="cc">: .. </tspan><tspan fill="#0550ae" class="val">MySQL, Microsoft SQL Server</tspan></tspan>
+<tspan x="560" y="340.0"><tspan fill="#bc4c00" class="key">Security.Tools</tspan><tspan fill="#8c959f" class="cc">: ..... </tspan><tspan fill="#0550ae" class="val">Burp Suite Pro, OWASP Top 10, DevTools</tspan></tspan>
+<tspan x="560" y="369.5"><tspan fill="#bc4c00" class="key">Security.Practice</tspan><tspan fill="#8c959f" class="cc">: .. </tspan><tspan fill="#0550ae" class="val">Web Pentesting, Vulnerability Assessment</tspan></tspan>
+<tspan x="560" y="399.0"><tspan fill="#bc4c00" class="key">Certifications</tspan><tspan fill="#8c959f" class="cc">: ........... </tspan><tspan fill="#1a7f37" class="addColor">OCI 2025 Certified • AI/TF • Web Ethical Hacking</tspan></tspan>
+<tspan x="560" y="428.5"><tspan fill="#bc4c00" class="key">PortSwigger Labs</tspan><tspan fill="#8c959f" class="cc">: ........ </tspan><tspan fill="#1a7f37" class="addColor">50+ Solved</tspan><tspan fill="#8c959f" class="cc"> (SQLi, XSS, CSRF, IDOR)</tspan></tspan>
+<tspan x="560" y="458.0"><tspan fill="#bc4c00" class="key">HackerOne Vulns</tspan><tspan fill="#8c959f" class="cc">: ......... </tspan><tspan fill="#1a7f37" class="addColor">15+ Reported</tspan><tspan fill="#8c959f" class="cc"> (High / Medium)</tspan></tspan>
+<tspan x="560" y="487.5"><tspan fill="#bc4c00" class="key">Email</tspan><tspan fill="#8c959f" class="cc">: ...................... </tspan><tspan fill="#0550ae" class="val">ahmadherzalla31@gmail.com</tspan></tspan>
+<tspan x="560" y="517.0"><tspan fill="#bc4c00" class="key">LinkedIn</tspan><tspan fill="#8c959f" class="cc">: .................. </tspan><tspan fill="#0550ae" class="val">ahmadherzalla12</tspan></tspan>
+<tspan x="560" y="546.5"><tspan fill="#bc4c00" class="key">Portfolio</tspan><tspan fill="#8c959f" class="cc">: ................. </tspan><tspan fill="#0550ae" class="val">ahmed-herzalla0.github.io/Portfolio-scss</tspan></tspan>
+<tspan x="560" y="576.0"><tspan fill="#bc4c00" class="key">GitHub</tspan><tspan fill="#8c959f" class="cc">: .................... </tspan><tspan fill="#1a7f37" class="addColor">Ahmed-Herzalla0</tspan></tspan>
+<tspan x="560" y="605.5"><tspan fill="#bc4c00" class="key">Status</tspan><tspan fill="#8c959f" class="cc">: ................... </tspan><tspan fill="#1a7f37" class="addColor">Open for Engineering &amp; Security Roles</tspan></tspan>
 </text>
 </svg>
