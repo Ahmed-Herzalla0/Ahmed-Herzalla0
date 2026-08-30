@@ -73,7 +73,7 @@ raw_user_ascii = '''                                                            
 .................:.:.::.:.....:...::..........:::%%%%%%%#:::::::::-::--:--:-:#%%%%%##.:::::::::::.:::::::::.:::::::::::::::::::::.::::.::...'''
 
 def build_svg(dark=True):
-    width = 1200
+    width = 1240
     height = 730
     
     if dark:
@@ -101,7 +101,6 @@ def build_svg(dark=True):
 
     TOTAL_CHARS = 46
 
-    # Optimized and shortened Neofetch specs to fit perfectly without overflow
     specs = [
         ("prompt", "ahmad@PTUK", ":~$ neofetch --engineer --security", add_fill, "addColor"),
         ("spec", "OS", "Linux (Debian), Windows 11", val_fill, "val"),
@@ -161,8 +160,8 @@ def build_svg(dark=True):
         out.append(f'<tspan x="14" y="{y:.1f}" fill="{ascii_fill}">{safe_line}</tspan>')
     out.append('</text>')
 
-    # Right Neofetch Specs block starting at x="635"
-    out.append(f'<text x="635" y="60" fill="{text_fill}" class="specs">')
+    # Right Neofetch Specs block shifted right to x="700"
+    out.append(f'<text x="700" y="60" fill="{text_fill}" class="specs">')
     spec_start_y = 60
     spec_line_height = 32.0
     for i, item in enumerate(specs):
@@ -170,7 +169,7 @@ def build_svg(dark=True):
         if item[0] == "prompt":
             u_part = html.escape(item[1])
             cmd_part = html.escape(item[2])
-            out.append(f'<tspan x="635" y="{y:.1f}"><tspan fill="{add_fill}" class="addColor">{u_part}</tspan><tspan fill="{val_fill}">{cmd_part}</tspan></tspan>')
+            out.append(f'<tspan x="700" y="{y:.1f}"><tspan fill="{add_fill}" class="addColor">{u_part}</tspan><tspan fill="{val_fill}">{cmd_part}</tspan></tspan>')
         else:
             k = item[1]
             v = item[2]
@@ -182,17 +181,17 @@ def build_svg(dark=True):
             safe_k = html.escape(k)
             safe_v = html.escape(v)
             safe_dots = html.escape(dots)
-            out.append(f'<tspan x="635" y="{y:.1f}"><tspan fill="{key_fill}" class="key">{safe_k}</tspan><tspan fill="{cc_fill}" class="cc">:{safe_dots}</tspan><tspan fill="{color_hex}" class="{cls_name}">{safe_v}</tspan></tspan>')
+            out.append(f'<tspan x="700" y="{y:.1f}"><tspan fill="{key_fill}" class="key">{safe_k}</tspan><tspan fill="{cc_fill}" class="cc">:{safe_dots}</tspan><tspan fill="{color_hex}" class="{cls_name}">{safe_v}</tspan></tspan>')
     out.append('</text>')
     out.append('</svg>')
     
     return '\n'.join(out)
 
 if __name__ == "__main__":
-    for fname in ["dark_mode.svg", "dark_mode_v7.svg"]:
+    for fname in ["dark_mode.svg", "dark_mode_v8.svg"]:
         with open(f"/home/ahmad/Desktop/Ahmed-Herzalla0/{fname}", "w") as f:
             f.write(build_svg(dark=True))
-    for fname in ["light_mode.svg", "light_mode_v7.svg"]:
+    for fname in ["light_mode.svg", "light_mode_v8.svg"]:
         with open(f"/home/ahmad/Desktop/Ahmed-Herzalla0/{fname}", "w") as f:
             f.write(build_svg(dark=False))
-    print("SVGs v7 generated successfully!")
+    print("SVGs v8 generated with right alignment!")
