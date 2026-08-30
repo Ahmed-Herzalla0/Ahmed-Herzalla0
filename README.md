@@ -1,7 +1,7 @@
 <a href="https://github.com/Ahmed-Herzalla0/Ahmed-Herzalla0">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ahmed-Herzalla0/Ahmed-Herzalla0/main/dark_mode.svg">
-    <img alt="Ahmed Herzalla's GitHub Profile README" src="https://raw.githubusercontent.com/Ahmed-Herzalla0/Ahmed-Herzalla0/main/light_mode.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ahmed-Herzalla0/Ahmed-Herzalla0/main/dark_mode.svg?v=white">
+    <img alt="Ahmed Herzalla's GitHub Profile README" src="https://raw.githubusercontent.com/Ahmed-Herzalla0/Ahmed-Herzalla0/main/light_mode.svg?v=white">
   </picture>
 </a>
 
