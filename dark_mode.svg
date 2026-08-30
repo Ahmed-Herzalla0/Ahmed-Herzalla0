@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,'Fira Code','Courier New',monospace" width="985px" height="510px" font-size="14px">
+<style>
+@font-face {
+  src: local('Consolas'), local('Consolas Bold'), local('Fira Code'), local('Courier New'), local('monospace');
+  font-family: 'ConsolasFallback';
+  font-display: swap;
+}
+.key { fill: #ffa657; font-weight: bold; }
+.val_default { fill: #a5d6ff; }
+.val_green { fill: #3fb950; font-weight: bold; }
+.val_yellow { fill: #f2cc60; }
+.val_purple { fill: #d2a8ff; }
+.val_cyan { fill: #58a6ff; }
+.val_white { fill: #f0f6fc; }
+.cc { fill: #30363d; }
+.prompt_user { fill: #7ee787; font-weight: bold; }
+.prompt_host { fill: #79c0ff; font-weight: bold; }
+.cmd { fill: #e6edf3; }
+.ascii { fill: #79c0ff; }
+text, tspan { white-space: pre; }
+</style>
+<rect width="985" height="510" fill="#0d1117" rx="14" stroke="#30363d" stroke-width="1.5"/>
+<text x="20" y="32" class="ascii">
+<tspan x="20" y="32">               ,g@@@@@g,              </tspan>
+<tspan x="20" y="57">            ,@@@@@@@@@@@@@,           </tspan>
+<tspan x="20" y="82">          ,@@@@*&#x27;   &#x27;*@@@@,          </tspan>
+<tspan x="20" y="107">         ,@@@*  _   _  *@@@,         </tspan>
+<tspan x="20" y="132">        ,@@@|  (o) (o)  |@@@,        </tspan>
+<tspan x="20" y="157">        @@@@|     ^     |@@@@        </tspan>
+<tspan x="20" y="182">        @@@@ \  &#x27;---&#x27;  / @@@@        </tspan>
+<tspan x="20" y="207">        @@@@@ &#x27;._____.&#x27;  @@@@@        </tspan>
+<tspan x="20" y="232">       ,@@@@@@@g=======g@@@@@@@,       </tspan>
+<tspan x="20" y="257">      ,@@@@@*[SECURITY]*@@@@@,       </tspan>
+<tspan x="20" y="282">     ,@@@@@|  [0xAHMAD] |@@@@@,      </tspan>
+<tspan x="20" y="307">     @@@@@@| [FULLSTACK]|@@@@@@      </tspan>
+<tspan x="20" y="332">     @@@@@@|[ASP.LARAVEL|@@@@@@      </tspan>
+<tspan x="20" y="357">     &#x27;@@@@@| [REACT.VUE]|@@@@@&#x27;      </tspan>
+<tspan x="20" y="382">      &#x27;@@@@@\ [PTUK.CSE]/@@@@@&#x27;       </tspan>
+<tspan x="20" y="407">       &#x27;@@@@@@g=======g@@@@@@&#x27;        </tspan>
+<tspan x="20" y="432">         &#x27;*@@@@@@@@@@@@@@@*&#x27;          </tspan>
+<tspan x="20" y="457">            &#x27;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&#x27;            </tspan>
+<tspan x="20" y="482">    ================================  </tspan>
+</text>
+<text x="365" y="32">
+<tspan x="365" y="32"><tspan class="prompt_user">ahmad</tspan><tspan class="cmd">@</tspan><tspan class="prompt_host">PTUK</tspan><tspan class="cmd">:~$ neofetch --engineer --security</tspan></tspan>
+<tspan x="365" y="57"><tspan class="key">OS</tspan>:<tspan class="cc"> ....................... </tspan><tspan class="val_default">Linux (Debian), Windows 11</tspan></tspan>
+<tspan x="365" y="82"><tspan class="key">Host</tspan>:<tspan class="cc"> ...... </tspan><tspan class="val_white">Palestine Technical University - Kadoorie</tspan></tspan>
+<tspan x="365" y="107"><tspan class="key">Kernel</tspan>:<tspan class="cc"> ..... </tspan><tspan class="val_yellow">Computer Systems Engineering (2022-2027)</tspan></tspan>
+<tspan x="365" y="132"><tspan class="key">Role</tspan>:<tspan class="cc"> ..... </tspan><tspan class="val_green">Full-Stack Developer &amp; Security Researcher</tspan></tspan>
+<tspan x="365" y="157"><tspan class="key">Focus</tspan>:<tspan class="cc"> ....... </tspan><tspan class="val_cyan">ASP.NET Core • Laravel • React • Vue.js</tspan></tspan>
+<tspan x="365" y="182"><tspan class="key">IDE</tspan>:<tspan class="cc"> ..................... </tspan><tspan class="val_default">VS Code, Visual Studio 2022</tspan></tspan>
+<tspan x="365" y="207"><tspan class="key">Backend</tspan>:<tspan class="cc"> ... </tspan><tspan class="val_default">C# (ASP.NET Core), PHP (Laravel), Python, SQL</tspan></tspan>
+<tspan x="365" y="232"><tspan class="key">Frontend</tspan>:<tspan class="cc"> ..... </tspan><tspan class="val_default">React, Vue.js, JavaScript, HTML5, SCSS</tspan></tspan>
+<tspan x="365" y="257"><tspan class="key">Database</tspan>:<tspan class="cc"> ................ </tspan><tspan class="val_default">MySQL, Microsoft SQL Server</tspan></tspan>
+<tspan x="365" y="282"><tspan class="key">Security</tspan>:<tspan class="cc"> ... </tspan><tspan class="val_purple">Burp Suite, OWASP Top 10, PortSwigger, HackerOne</tspan></tspan>
+<tspan x="365" y="307"><tspan class="key">Certifications</tspan>:<tspan class="cc"> ... </tspan><tspan class="val_yellow">OCI 2025 Certified • Web Ethical Hacking • AI/TF</tspan></tspan>
+<tspan x="365" y="332"><tspan class="key">Labs.Solves</tspan>:<tspan class="cc"> ... </tspan><tspan class="val_green">50+ Practical Web Security Labs (PortSwigger)</tspan></tspan>
+<tspan x="365" y="357"><tspan class="key">Bugs.Reported</tspan>:<tspan class="cc"> ... </tspan><tspan class="val_green">15+ High/Med Web Vulns Reported (HackerOne)</tspan></tspan>
+<tspan x="365" y="382"><tspan class="key">Email</tspan>:<tspan class="cc"> ..................... </tspan><tspan class="val_default">ahmadherzalla31@gmail.com</tspan></tspan>
+<tspan x="365" y="407"><tspan class="key">LinkedIn</tspan>:<tspan class="cc"> ............ </tspan><tspan class="val_default">linkedin.com/in/ahmadherzalla12</tspan></tspan>
+<tspan x="365" y="432"><tspan class="key">Portfolio</tspan>:<tspan class="cc"> ... </tspan><tspan class="val_cyan">ahmed-herzalla0.github.io/Portfolio-scss</tspan></tspan>
+<tspan x="365" y="457"><tspan class="key">GitHub</tspan>:<tspan class="cc"> ................... </tspan><tspan class="val_green">github.com/Ahmed-Herzalla0</tspan></tspan>
+</text>
+</svg>
