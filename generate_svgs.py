@@ -58,7 +58,7 @@ def build_svg(dark=True):
         add_fill = "#3fb950"
         del_fill = "#f85149"
         cc_fill = "#616e7f"
-        ascii_fill = "#ffffff"  # Pure White
+        ascii_fill = "#FFFFFF"  # PURE WHITE
         border_stroke = "#30363d"
     else:
         bg_fill = "#ffffff"
@@ -107,7 +107,7 @@ def build_svg(dark=True):
     out.append("}")
     out.append(".ascii {")
     out.append("  font-family: 'ConsolasFallback', Consolas, 'Fira Code', 'Courier New', monospace;")
-    out.append(f"  fill: {ascii_fill};")
+    out.append(f"  fill: {ascii_fill} !important;")
     out.append("  font-size: 10.5px;")
     out.append("  letter-spacing: 0px;")
     out.append("}")
@@ -160,11 +160,15 @@ def build_svg(dark=True):
 
 if __name__ == "__main__":
     dark_svg = build_svg(dark=True)
+    with open("/home/ahmad/Desktop/Ahmed-Herzalla0/dark_mode_v2.svg", "w") as f:
+        f.write(dark_svg)
     with open("/home/ahmad/Desktop/Ahmed-Herzalla0/dark_mode.svg", "w") as f:
         f.write(dark_svg)
-    print("Wrote dark_mode.svg (explicit white fill on all elements)")
+    print("Wrote dark_mode_v2.svg")
 
     light_svg = build_svg(dark=False)
+    with open("/home/ahmad/Desktop/Ahmed-Herzalla0/light_mode_v2.svg", "w") as f:
+        f.write(light_svg)
     with open("/home/ahmad/Desktop/Ahmed-Herzalla0/light_mode.svg", "w") as f:
         f.write(light_svg)
-    print("Wrote light_mode.svg")
+    print("Wrote light_mode_v2.svg")
