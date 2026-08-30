@@ -58,23 +58,21 @@ def build_svg(dark=True):
         add_fill = "#3fb950"
         del_fill = "#f85149"
         cc_fill = "#616e7f"
-        ascii_fill = "#79c0ff"
+        ascii_fill = "#ffffff"  # Pure White for crisp high-contrast ASCII art
         border_stroke = "#30363d"
     else:
-        bg_fill = "#f6f8fa"
+        bg_fill = "#ffffff"     # Clean White background in light mode
         text_fill = "#24292f"
         key_fill = "#bc4c00"
         val_fill = "#0550ae"
         add_fill = "#1a7f37"
         del_fill = "#cf222e"
         cc_fill = "#8c959f"
-        ascii_fill = "#0969da"
+        ascii_fill = "#24292f"  # Crisp dark for light background
         border_stroke = "#d0d7de"
 
     ascii_lines = user_ascii.strip().split('\n')
 
-    # Specs on right: (key, dots, value, val_class)
-    # Start y around 60, line-height 28px for specs
     specs_list = [
         [("ahmad@PTUK:~$ neofetch --engineer --security", "addColor")],
         [("OS", "key"), (": ........................ ", "cc"), ("Linux (Debian), Windows 11", "val")],
@@ -162,7 +160,7 @@ if __name__ == "__main__":
     dark_svg = build_svg(dark=True)
     with open("/home/ahmad/Desktop/Ahmed-Herzalla0/dark_mode.svg", "w") as f:
         f.write(dark_svg)
-    print("Wrote dark_mode.svg")
+    print("Wrote dark_mode.svg (white ascii)")
 
     light_svg = build_svg(dark=False)
     with open("/home/ahmad/Desktop/Ahmed-Herzalla0/light_mode.svg", "w") as f:
