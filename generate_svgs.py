@@ -74,7 +74,7 @@ raw_user_ascii = '''                                                            
 
 def build_svg(dark=True):
     width = 1200
-    height = 740
+    height = 730
     
     if dark:
         bg_fill = "#161b22"
@@ -99,27 +99,30 @@ def build_svg(dark=True):
 
     ascii_lines = [l.rstrip() for l in raw_user_ascii.split('\n')]
 
-    specs_list = [
-        [("ahmad@PTUK:~$ neofetch --engineer --security", "addColor", add_fill)],
-        [("OS", "key", key_fill), (": ........................ ", "cc", cc_fill), ("Linux (Debian), Windows 11", "val", val_fill)],
-        [("Host", "key", key_fill), (": ...................... ", "cc", cc_fill), ("Palestine Technical University - Kadoorie", "val", val_fill)],
-        [("Kernel", "key", key_fill), (": .... ", "cc", cc_fill), ("Computer Systems Engineering (2022-2027)", "addColor", add_fill)],
-        [("Role", "key", key_fill), (": ...... ", "cc", cc_fill), ("Full-Stack Developer & Security Researcher", "val", val_fill)],
-        [("Focus", "key", key_fill), (": ..... ", "cc", cc_fill), ("ASP.NET Core • Laravel • React • Vue.js", "val", val_fill)],
-        [("IDE", "key", key_fill), (": ........................ ", "cc", cc_fill), ("VS Code, Visual Studio 2022", "val", val_fill)],
-        [("Backend", "key", key_fill), (": ... ", "cc", cc_fill), ("C# (ASP.NET), PHP (Laravel), Python, SQL", "val", val_fill)],
-        [("Frontend", "key", key_fill), (": .. ", "cc", cc_fill), ("React, Vue.js, JavaScript, HTML5, SCSS", "val", val_fill)],
-        [("Database", "key", key_fill), (": .. ", "cc", cc_fill), ("MySQL, Microsoft SQL Server", "val", val_fill)],
-        [("Security.Tools", "key", key_fill), (": ..... ", "cc", cc_fill), ("Burp Suite Pro, OWASP Top 10, DevTools", "val", val_fill)],
-        [("Security.Practice", "key", key_fill), (": .. ", "cc", cc_fill), ("Web Pentesting, Vulnerability Assessment", "val", val_fill)],
-        [("Certifications", "key", key_fill), (": ........... ", "cc", cc_fill), ("OCI 2025 Certified • AI/TF • Web Ethical Hacking", "addColor", add_fill)],
-        [("PortSwigger Labs", "key", key_fill), (": ........ ", "cc", cc_fill), ("50+ Solved", "addColor", add_fill), (" (SQLi, XSS, CSRF, IDOR)", "cc", cc_fill)],
-        [("HackerOne Vulns", "key", key_fill), (": ......... ", "cc", cc_fill), ("15+ Reported", "addColor", add_fill), (" (High / Medium)", "cc", cc_fill)],
-        [("Email", "key", key_fill), (": ...................... ", "cc", cc_fill), ("ahmadherzalla31@gmail.com", "val", val_fill)],
-        [("LinkedIn", "key", key_fill), (": .................. ", "cc", cc_fill), ("ahmadherzalla12", "val", val_fill)],
-        [("Portfolio", "key", key_fill), (": ................. ", "cc", cc_fill), ("ahmed-herzalla0.github.io/Portfolio-scss", "val", val_fill)],
-        [("GitHub", "key", key_fill), (": .................... ", "cc", cc_fill), ("Ahmed-Herzalla0", "addColor", add_fill)],
-        [("Status", "key", key_fill), (": ................... ", "cc", cc_fill), ("Open for Engineering & Security Roles", "addColor", add_fill)]
+    TOTAL_CHARS = 46
+
+    # Optimized and shortened Neofetch specs to fit perfectly without overflow
+    specs = [
+        ("prompt", "ahmad@PTUK", ":~$ neofetch --engineer --security", add_fill, "addColor"),
+        ("spec", "OS", "Linux (Debian), Windows 11", val_fill, "val"),
+        ("spec", "Host", "PTUK (Palestine Technical Univ)", val_fill, "val"),
+        ("spec", "Kernel", "Computer Systems Eng (2022-2027)", add_fill, "addColor"),
+        ("spec", "Role", "Full-Stack Dev & Security Researcher", val_fill, "val"),
+        ("spec", "Focus", "ASP.NET Core • Laravel • React • Vue", val_fill, "val"),
+        ("spec", "IDE", "VS Code, Visual Studio 2022", val_fill, "val"),
+        ("spec", "Backend", "C# (ASP.NET), PHP (Laravel), SQL", val_fill, "val"),
+        ("spec", "Frontend", "React, Vue.js, JavaScript, SCSS", val_fill, "val"),
+        ("spec", "Database", "MySQL, Microsoft SQL Server", val_fill, "val"),
+        ("spec", "Security.Tools", "Burp Suite Pro, OWASP Top 10", val_fill, "val"),
+        ("spec", "Security.Practice", "Web Pentesting & Bug Hunting", val_fill, "val"),
+        ("spec", "Certifications", "OCI 2025 • AI/TF • Ethical Hacking", add_fill, "addColor"),
+        ("spec", "PortSwigger Labs", "50+ Solved (SQLi, XSS, CSRF)", add_fill, "addColor"),
+        ("spec", "HackerOne Vulns", "15+ Reported (High / Med)", add_fill, "addColor"),
+        ("spec", "Email", "ahmadherzalla31@gmail.com", val_fill, "val"),
+        ("spec", "LinkedIn", "ahmadherzalla12", val_fill, "val"),
+        ("spec", "Portfolio", "ahmed-herzalla0.github.io/Portfolio-scss", val_fill, "val"),
+        ("spec", "GitHub", "Ahmed-Herzalla0", add_fill, "addColor"),
+        ("spec", "Status", "Open for Dev & Security Roles", add_fill, "addColor")
     ]
 
     out = []
@@ -134,12 +137,12 @@ def build_svg(dark=True):
     out.append(".ascii {")
     out.append("  font-family: 'ConsolasFallback', Consolas, 'Fira Code', 'Courier New', monospace;")
     out.append(f"  fill: {ascii_fill};")
-    out.append("  font-size: 7.6px;")
+    out.append("  font-size: 7.5px;")
     out.append("  letter-spacing: 0px;")
     out.append("}")
     out.append(".specs {")
     out.append("  font-family: 'ConsolasFallback', Consolas, 'Fira Code', 'Courier New', monospace;")
-    out.append("  font-size: 14.5px;")
+    out.append("  font-size: 13.5px;")
     out.append("}")
     out.append(f".key {{ fill: {key_fill}; font-weight: bold; }}")
     out.append(f".val {{ fill: {val_fill}; }}")
@@ -153,42 +156,43 @@ def build_svg(dark=True):
     # Left ASCII art block
     out.append(f'<text x="14" y="20" fill="{ascii_fill}" class="ascii">')
     for i, line in enumerate(ascii_lines):
-        y = 20 + i * 9.8
+        y = 20 + i * 9.7
         safe_line = html.escape(line)
         out.append(f'<tspan x="14" y="{y:.1f}" fill="{ascii_fill}">{safe_line}</tspan>')
     out.append('</text>')
 
-    # Right Neofetch Specs block
-    out.append(f'<text x="670" y="65" fill="{text_fill}" class="specs">')
-    spec_start_y = 65
-    spec_line_height = 32.5
-    for i, row in enumerate(specs_list):
+    # Right Neofetch Specs block starting at x="635"
+    out.append(f'<text x="635" y="60" fill="{text_fill}" class="specs">')
+    spec_start_y = 60
+    spec_line_height = 32.0
+    for i, item in enumerate(specs):
         y = spec_start_y + i * spec_line_height
-        if len(row) == 1:
-            safe_text = html.escape(row[0][0])
-            cls_name = row[0][1]
-            color_hex = row[0][2]
-            out.append(f'<tspan x="670" y="{y:.1f}" fill="{color_hex}" class="{cls_name}">{safe_text}</tspan>')
+        if item[0] == "prompt":
+            u_part = html.escape(item[1])
+            cmd_part = html.escape(item[2])
+            out.append(f'<tspan x="635" y="{y:.1f}"><tspan fill="{add_fill}" class="addColor">{u_part}</tspan><tspan fill="{val_fill}">{cmd_part}</tspan></tspan>')
         else:
-            first_txt = html.escape(row[0][0])
-            first_cls = row[0][1]
-            first_hex = row[0][2]
-            spec_str = f'<tspan x="670" y="{y:.1f}"><tspan fill="{first_hex}" class="{first_cls}">{first_txt}</tspan>'
-            for part_text, part_cls, part_hex in row[1:]:
-                safe_part = html.escape(part_text)
-                spec_str += f'<tspan fill="{part_hex}" class="{part_cls}">{safe_part}</tspan>'
-            spec_str += '</tspan>'
-            out.append(spec_str)
+            k = item[1]
+            v = item[2]
+            color_hex = item[3]
+            cls_name = item[4]
+            used_len = len(k) + len(v) + 4
+            num_dots = max(3, TOTAL_CHARS - used_len)
+            dots = " " + ("." * num_dots) + " "
+            safe_k = html.escape(k)
+            safe_v = html.escape(v)
+            safe_dots = html.escape(dots)
+            out.append(f'<tspan x="635" y="{y:.1f}"><tspan fill="{key_fill}" class="key">{safe_k}</tspan><tspan fill="{cc_fill}" class="cc">:{safe_dots}</tspan><tspan fill="{color_hex}" class="{cls_name}">{safe_v}</tspan></tspan>')
     out.append('</text>')
     out.append('</svg>')
     
     return '\n'.join(out)
 
 if __name__ == "__main__":
-    for fname in ["dark_mode.svg", "dark_mode_v6.svg"]:
+    for fname in ["dark_mode.svg", "dark_mode_v7.svg"]:
         with open(f"/home/ahmad/Desktop/Ahmed-Herzalla0/{fname}", "w") as f:
             f.write(build_svg(dark=True))
-    for fname in ["light_mode.svg", "light_mode_v6.svg"]:
+    for fname in ["light_mode.svg", "light_mode_v7.svg"]:
         with open(f"/home/ahmad/Desktop/Ahmed-Herzalla0/{fname}", "w") as f:
             f.write(build_svg(dark=False))
-    print("New 71-line ASCII art generated into v6 files!")
+    print("SVGs v7 generated successfully!")
