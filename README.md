@@ -1,7 +1,7 @@
 <a href="https://github.com/Ahmed-Herzalla0/Ahmed-Herzalla0">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./dark_mode_v2.svg">
-    <img alt="Ahmed Herzalla's GitHub Profile README" src="./light_mode_v2.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="./dark_mode_v3.svg">
+    <img alt="Ahmed Herzalla's GitHub Profile README" src="./light_mode_v3.svg">
   </picture>
 </a>
 
